@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<title>HTML Forms</title>
+	<meta charset="utf-8">
+
+</head>
+<body>
+	<div id="wrapper" class="wrapper">
+		<section id="html-forms" class="main-section">
+			<form action="somepage.php" method="get">  <!-- to be valid the form tag needs two attributes - action & method -->
+
+				<div id="fn-container" class="form-elm">
+					<label for="FirstName">First name</label>
+					<input type="text" name="FirstName" id="FirstName" placeholder="First name goes here"> <!-- as soon as the user starts typing the placeholder text will disappear -->
+				</div>
+				<br>
+
+				<div id="ln-container" class="form-elm">
+					<label for="LastName">Last Name</label>
+					<input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name here">
+				</div>
+				<br>
+
+				<div id="email-container" class="form-elm">
+					<label for="email">Email</label> <!-- for attribute is the same as the name and id attributes in the input tag for easier styling -->
+					<input type="email" name="email" id="email" value="example@gmail.com" required>
+				</div>
+				<br>
+
+				<div id="pass-container" class="form-elm">
+					<label for="pass">Password</label>
+					<input type="password" name="pass" id="pass" required> <!-- the required attribute makes this input required and will not let the user submit without adding this value -->
+				</div>
+				<br>
+
+				<div id="intro-container" class="form-elm">
+					<label for="introtext">Introductory Text</label>
+					<textarea name="introtext" id="introtext" placeholder="please introduce yourself below"> 
+						Please use this text area
+					</textarea> <!-- The textarea tag allows the user to input text in to more than one line -->
+				</div>
+				<br>
+
+				<div id="dob-container" class="form-elm">
+					<label for="dob">Date of Birth</label>
+					<input type="date" name="dob" id="dob"><br> <!-- input type="date" will create a calendar for the user to select the date-->
+				</div>
+				<br>
+
+				<div id="phone-container" class="form-elm">
+					<label for="phone">Mobile Number:</label>
+ 					<input type="tel" id="phone" name="phone" placeholder="(111)111-111" required>
+ 				</div>
+ 				
+				<div id="radio-container" class="form-elm"> <!-- Radio-container creates boxes and only let you select one option, compared to the drop-container that makes chekcboxes that let you select more than one option-->
+					<p>Gender</p>
+					<label for="male">
+						<input type="radio" name="gender" id="male" value="male" checked>
+						Male
+					</label>
+					<label for="female">
+						<input type="radio" name="gender" id="female" value="female">
+						Female
+					</label>
+					<label for="other">
+						<input type="radio" name="gender" id="other" value="other">
+						Other
+					</label>
+				</div>
+				<br>
+
+				<div id="address-container" class="form-elm">
+					<label for="Address">Address</label>
+					<input type="text" name="Address" id="Address" placeholder="123 Main st." required>
+				</div>
+				<br>
+
+				<div id="city-container" class="form-elm">
+					<label for="City">City</label>
+					<input type="text" name="City" id="City" placeholder="Ottawa">
+				</div>
+				<br>
+
+				<div id="province-drop-container" class="form-elm">
+					<!-- select element is used to create dropdown menus in HTML -->
+					<!-- select comes paired with <options> the vlaue of the selected option gets submitted to the server -->
+					<label for="province">Province</label>
+					<select name="province" id="province">
+						<option value="alberta">Alberta</option>
+						<option value="bc">British Columbia</option>
+						<option value="manitoba">Manitoba</option>
+						<option value="nb">New Brunswick</option>
+						<option value="nfld">Newfoundland and Labrador</option>
+						<option value="ns">Nova Scotia</option>
+						<option value="ontario" selected>Ontario</option> <!-- selected attribute makes this option the default -->
+						<option value="pei">Prince Edward Island</option>
+						<option value="quebec">Quebec</option>
+						<option value="saskatchewan">Saskatchewan</option>
+					</select>
+				</div>
+				<br>
+
+				<div id="country-drop-container" class="form-elm">
+					<label for="country">Country</label>
+					<select name="country" id="country">
+						<option value="australia">Australia</option>
+						<option value="canada" selected>Canada</option>
+						<option value="france">France</option>
+						<option value="mexico">Mexico</option>
+						<option value="us">United States</option>
+					</select>
+				</div>
+				<br>
+
+				<div id="postalcode-container" class="form-elm">
+					<label for="PostalCode">Postal Code</label>
+					<input type="text" name="PostalCode" id="PostalCode" placeholder="A1A 1A1">
+				</div>
+				<br>
+
+				<div id="hobbies-container" class="form-elm">
+					<h3>Hobbies / Interests</h3>
+					<label for="baking">Baking</label>
+					<input type="checkbox" name="hobbies" id="baking" value="baking" checked> <br> <!-- the checked attribute, like the selected attribute checks this item off by default -->
+					
+					<label for="fishing">Fishing</label>
+					<input type="checkbox" name="hobbies" id="fishing" value="fishing"> <br>
+					
+					<label for="knitting">Knitting</label>
+					<input type="checkbox" name="hobbies" id="knitting" value="knitting"> <br>
+
+					<label for="painting">Painting</label>
+					<input type="checkbox" name="hobbies" id="painting" value="painting"> <br>
+
+					<label for="reading">Reading</label>
+					<input type="checkbox" name="hobbies" id="reading" value="reading"> <br>
+
+					<label for="swimming">Swimming</label>
+					<input type="checkbox" name="hobbies" id="swimming" value="swimming"> <br>
+				</div>
+				<br>
+
+				<div id="url-container" class="form-elm">
+					<label for="ur">Website</label>	
+					<!-- With the URL input type, the user must input the full url of the website, must begin with http or https -->
+					<input type="url" name="ur" id="ur" placeholder="https://www.google.ca/" required>
+				</div>
+				<br>
+
+				<button type="submit">Submit</button> <!-- button type="submit" creates a button that submits the form and HTML5 elements get automatically validated by the browser -->
+				<button type="reset">Reset</button> <!-- button typ="reset" resets the form values, without needing to refresh the page -->
+			</form>
+		</section>
+	</div>
+</body>
+</html>
