@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Final Assignment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Include Fonts Stylesheet - fonts come before style sheet -->
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <!-- Add Base CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+
+<body>
+<header class="site-header" id="site-header">
+		<div class="title">My Logo</div>
+
+      <nav class="container clearfix">
+      <ul class="main-nav clearfix">
+        <li>
+          <a href="home.html" class="box">Home</a>
+        </li>
+        <li>
+          <a href="about-us.html" class="box">About</a>
+        </li>
+        <li>
+          <a href="schedule.html" class="box">Schedule</a>
+        </li>
+        <li>
+          <a href="portfolio.html" class="box">Portfolio</a>
+        </li>
+        <li>
+          <a href="contact.html" class="box">Contact</a>
+        </li>
+      </ul>
+    </nav>
+</header>
+<br>
+  <h2>About</h2>
+	<div class="about clearfix" id="about">
+		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget vulputate tortor. Ut rutrum sed leo et fermentum. Donec pharetra aliquet enim, vitae porta elit fermentum placerat. Phasellus a felis sem. Nulla ac pellentesque est. Maecenas auctor efficitur diam, in ultricies odio viverra sit amet. Donec dui libero, lacinia at mattis a, mollis eu ipsum. Morbi convallis pulvinar elit condimentum feugiat. Curabitur viverra neque quis hendrerit tempus. Nullam dignissim iaculis gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed finibus lacus et nunc ullamcorper rhoncus. Mauris sit amet orci a sem accumsan malesuada at facilisis odio. Vestibulum in pellentesque erat. Duis velit dui, laoreet faucibus dictum at, mollis eget ligula. Proin venenatis quam id augue faucibus suscipit. Suspendisse arcu nisi, feugiat eget nunc accumsan, malesuada consectetur leo. Aliquam tincidunt sagittis diam, non malesuada magna lobortis vitae. Maecenas vehicula augue quis ipsum dignissim auctor. Nulla varius porttitor neque ut ultricies.</p>
+
+		<p>Nunc vel nisi eu nunc imperdiet venenatis. Nulla tincidunt diam non maximus mattis. Maecenas dui massa, dapibus ut mi at, dapibus tristique velit. In hac habitasse platea dictumst. Sed id faucibus ipsum, id mattis urna. Etiam nec risus in mauris vestibulum cursus. Vivamus molestie lacus nunc, vitae mollis libero gravida sed. Vestibulum sit amet neque nec risus ornare rhoncus eu at risus. Donec non dui nulla. Sed ultricies malesuada urna, molestie efficitur risus efficitur sit amet. Curabitur quis est eu nunc venenatis rhoncus. Mauris vestibulum sed nunc egestas vehicula. Nulla posuere at urna ut tincidunt. Suspendisse arcu ante, fermentum id nibh sed, dapibus convallis augue. Aenean sed libero leo. Sed accumsan interdum sapien ut laoreet. Phasellus enim mauris, ultrices at pretium eget, ullamcorper vel diam. Nulla pretium mi eu dapibus dapibus. </p>
+    </div>
+
+    <div class="main-image-container">
+        <img src="img/image-1.jpg" alt="image 1" class="main-image">
+    </div>
+
+	<section id="table-section" class="main-section-1 clearfix">
+		<h2>Schedule</h2>
+			<table>
+				<thead> <!-- table contents to be centered by css -->
+           			<tr>
+            			<th>Time</th>
+               			<th>Monday</th>
+                		<th>Tuesday</th>
+                		<th>Wednesday</th>
+               			<th>Thursday</th>
+                		<th>Friday</th>
+           			</tr>
+       	</thead>
+       			<tbody>
+        			<tr>
+        				<td>9:00 - 11:00</td>
+        				<td>Communications 1</td>
+        				<td>Client Services</td>
+        				<td>Special Collections</td>
+               	<td>Directed Research Seminar</td>
+                <td>Client Services</td>
+        			</tr>
+
+        			<tr>
+        				<td>11:00 - 12:30</td>
+        				<td>Reference</td>
+        				<td>Internet App</td>
+        				<td>Library Software</td>
+               	<td>French</td>
+                <td>Reference</td>
+        			</tr>
+
+        			<tr>
+        				<td>14:00 - 15:00</td>
+        				<td>Acquisitions</td>
+        				<td>General Elective</td>
+        				<td>Marketing</td>
+               	<td>Emerging Library Tech</td>
+                <td>Library Software</td>
+        			</tr>
+
+        			<tr>
+        				<td>15:30 - 17:30</td>
+        				<td>French</td>
+        				<td>French</td>
+        				<td>Acquisitions</td>
+        				<td>Subject Analysis</td>
+               	<td>Internet App</td>
+              </tr>    	
+    			 </tbody>
+   			</table>
+	</section>
+
+<div id="wrapper" class="wrapper">
+    <section class="main-section2 clearfix">
+    <div class="form">
+      <h2>Edit Profile</h2>
+      <form action="somepage.php" method="get" id="profile-form"> 
+
+        <div id="name-container" class="form-elm">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <br>
+
+        <div id="email-container" class="form-elm">
+          <label for="email">Email:</label> <!-- for attribute is the same as the name and id attributes in the input tag for easier styling -->
+          <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+        </div>
+        <br>
+
+        <div id="address-container" class="form-elm">
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address" placeholder="123 Main st." required>
+        </div>
+        <br>
+
+        <div id="city-container" class="form-elm">
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" placeholder="Ottawa" required>
+        </div>
+        <br>
+
+        <div id="province-drop-container" class="form-elm">
+          <label for="province">Province</label>
+          <select name="province" id="province">
+            <option value="default" selected>Select Province</option>
+            <option value="AB">Alberta</option>
+            <option value="BC">British Columbia</option>
+            <option value="MB">Manitoba</option>
+            <option value="NB">New Brunswick</option>
+            <option value="NL">Newfoundland and Labrador</option>
+            <option value="NS">Nova Scotia</option>
+            <option value="ON">Ontario</option>
+            <option value="PE">Prince Edward Island</option>
+            <option value="QC">Quebec</option>
+            <option value="SK">Saskatchewan</option>
+            <option value="YT">Yukon</option>
+            <option value="NT">Northwest Territories</option>
+            <option value="NU">Nunavut</option>
+          </select>
+        </div>
+        <br>
+
+        <div id="postalcode-container" class="form-elm">
+          <label for="pc">Postal Code</label>
+          <input type="text" required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="pc" id="pc" placeholder="A0A 0A0">
+        </div>
+       <br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+       <div id="results">
+          <h2>Profile Info</h2>
+          <i class="fa fa-user fa-5x"></i>
+          <p>Name: <span id="name_result"></span></p>
+          <p>Email: <a href="#" id="email_result"></a></p>
+          <p>Address: <span id="address_result"></span></p>
+          <p>City: <span id="city_result"></span></p>
+          <p>Province: <span id="province_result"></span></p>
+          <p>Postal Code: <span id="pc_result"></span></p>
+          <a href="mailto:" id="email-box" class="fa fa-envelope"></a>
+        </div>
+      </section>
+  </div>
+
+<footer class="footer clearfix" id="footer">
+   <div class="footer-container">
+    
+  <section class="quick-links">
+    <h4>QUICK LINKS</h4>
+      <nav>
+        <ul>
+          <li>
+          <a href="schedule.html">SCHEDULE</a>
+          </li>
+          <li>
+            <a href="about-us.html">ABOUT</a>
+          </li>
+          <li>
+          <a href="portfolio.html">PORTFOLIO</a>
+          </li>
+          <li>
+          <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+  </section>
+
+     <section class="follow-us">
+        <h4>FOLLOW US</h4>
+        <nav>
+            <ul>
+              <li>
+                <a href="http://facebook.com" id="facebook-icon" class="fa fa-facebook-f fa-2x"></a>
+              </li>
+              <li>
+                <a href="http://youtube.com" id="youtube-icon" class="fa fa-youtube fa-2x"></a> 
+              </li>
+              <li>
+                <a href="http://twitter.com" id="twitter-icon" class="fa fa-twitter fa-2x"></a>
+              </li>
+            </ul>
+        </nav>
+      </section>
+
+      <section class="address">
+        <h4>ADDRESS</h4>
+        <address>
+          <p>1385 Woodroffe Avenue</p>
+          <p>Ottawa, ON K2G 1V8</p>
+          <p>Canada</p>
+        </address>
+      </section>
+    </div>
+ </footer>
+ </body>
+ <script type="text/javascript" src="./js/scripts.js"></script>
+ </html>
